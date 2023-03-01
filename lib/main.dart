@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:nav_bar_task/views/authentication/login_view.dart';
+
+import 'views/dashboard_view.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
@@ -11,8 +12,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(body: LoginView()),
+    return const MaterialApp(
+      home: Scaffold(body: DashboardView()),
     );
   }
 }

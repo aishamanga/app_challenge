@@ -15,7 +15,12 @@ class DashboardView extends ConsumerWidget {
             height: 50,
             child: TopBarWidget(name: 'Aisha Manga')),
         // buttons with options
-        Positioned(left: 10, right: 10, bottom: 10, child: _ButtonOptions())
+        Positioned(
+            left: 10,
+            right: 10,
+            bottom: 10,
+            top: 50,
+            child: Center(child: _ButtonOptions()))
       ],
     );
   }
