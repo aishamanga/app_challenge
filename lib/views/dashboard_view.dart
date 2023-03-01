@@ -15,7 +15,7 @@ class DashboardView extends ConsumerWidget {
             height: 50,
             child: TopBarWidget(name: 'Aisha Manga')),
         // buttons with options
-        // statistics
+        Positioned(left: 10, right: 10, bottom: 10, child: _ButtonOptions())
       ],
     );
   }
@@ -49,7 +49,12 @@ class _ButtonOptions extends ConsumerWidget {
                 onPressed: () {}, child: const Text('Create new quiz'))
           ],
         ),
-        Row()
+        Row(
+          children: [
+            ElevatedButton(onPressed: () {}, child: const Text('Statistics')),
+            ElevatedButton(onPressed: () {}, child: const Text('View Catalog')),
+          ],
+        )
       ],
     );
   }
